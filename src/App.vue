@@ -1,6 +1,6 @@
 <template>
 <h1>SOS4IT</h1>
-<p>GitHub Pages Personal Point.</p>
+<p>GitHub Personal Point Pages.</p>
 </template>
 
 <script>
