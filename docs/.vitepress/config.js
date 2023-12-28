@@ -7,14 +7,14 @@ export default {
     head: [
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap' }],
         ['link', { rel: 'icon', href: '/icons/icon-512x512.png' }],
-        ['link', { rel: 'manifest', href: '/manifest.json' }],
+        //['link', { rel: 'manifest', href: '/manifest.json' }],
         ['meta', { name: 'theme-color', content: '#111827' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
         ['link', { rel: 'apple-touch-icon', href: '/image/sumer5020.svg' }],
         ['link', { rel: 'mask-icon', href: '/image/sumer5020.svg', color: '#111827' }],
         ['meta', { name: 'msapplication-TileColor', content: '#111827' }],
-        ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-512x512.png' }]
+        ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-512x512.png' }],
         ['meta', { name: 'google-site-verification', content: 'BBxJs4gm5grOCittFgrlj1Sa8FlKoaRAZiNUEvd0AsE' }],
     ],
 
