@@ -1,5 +1,5 @@
 // .vitepress/config.js
-import { defineConfig } from 'vitepress'
+import { defineConfig, HeadConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { FeedRSS } from './FeedRSS'
 
@@ -9,9 +9,9 @@ export default withPwa(defineConfig({
     vite: {
         logLevel: 'info',
         define: {
-          __DATE__: `'${new Date().toISOString()}'`,
+            __DATE__: `'${new Date().toISOString()}'`,
         },
-      },
+    },
     base,
     viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     robots: 'index, follow',
@@ -114,6 +114,14 @@ export default withPwa(defineConfig({
             }
         }
     },
+    transformHead: ({ pageData }) => {
+        const head: HeadConfig[] = []
+
+        head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
+        head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
+
+        return head
+    },
     /* your VitePress options */
     /* Vite PWA Options */
     pwa: {
@@ -132,7 +140,6 @@ export default withPwa(defineConfig({
             background_color: '#F6F6F6',
             display: 'standalone',
             orientation: 'any',
-            status_bar: '#49324b',
             icons: [
                 {
                     src: '/icons/icon-72x72.png',
@@ -160,7 +167,7 @@ export default withPwa(defineConfig({
                     type: 'image/png'
                 },
                 {
-                    src: '/icons/icon-192x192.png',
+                    src: '/icons/icon-196x196.png',
                     sizes: '196x196',
                     type: 'image/png'
                 },
@@ -170,18 +177,6 @@ export default withPwa(defineConfig({
                     type: 'image/png'
                 }
             ],
-            splash: {
-                '640x1136': 'icons/splash-640x1136.png',
-                '750x1334': 'icons/splash-750x1334.png',
-                '828x1792': 'icons/splash-828x1792.png',
-                '1125x2436': 'icons/splash-1125x2436.png',
-                '1242x2208': 'icons/splash-1242x2208.png',
-                '1242x2688': 'icons/splash-1242x2688.png',
-                '1536x2048': 'icons/splash-1536x2048.png',
-                '1668x2224': 'icons/splash-1668x2224.png',
-                '1668x2388': 'icons/splash-1668x2388.png',
-                '2048x2732': 'icons/splash-2048x2732.png'
-            }
         },
         workbox: {
             globPatterns: ['**/*.{css,js,md,html,webp,svg,png,ico,txt,woff2}'],
