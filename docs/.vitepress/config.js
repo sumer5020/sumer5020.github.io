@@ -15,7 +15,9 @@ export default {
         ['link', { rel: 'mask-icon', href: '/image/sumer5020.svg', color: '#111827' }],
         ['meta', { name: 'msapplication-TileColor', content: '#111827' }],
         ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-512x512.png' }]
+        ['meta', { name: 'google-site-verification', content: 'BBxJs4gm5grOCittFgrlj1Sa8FlKoaRAZiNUEvd0AsE' }],
     ],
+
     theme: 'theme-default',
     themeConfig: {
         logo: '/image/sumer5020.svg',
