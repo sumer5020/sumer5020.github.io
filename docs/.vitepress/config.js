@@ -20,16 +20,16 @@ export default {
     themeConfig: {
         logo: '/image/sumer5020.svg',
         //siteTitle: false,
-        colorMode: 'dark',
+        //colorMode: 'dark',
         //editLink: {
         //    pattern: 'https://github.com/sumer5020/sumer5020.github.io/edit/main/docs/:path',
         //    text: 'Edit this page on GitHub'
         //},
-        //algolia: {
-        //    appId: 'Z8NZAVZ5OU',
-        //    apiKey: 'f077307c4e38a788baeabe75db1375ee',
-        //    indexName: 'sumer5020',
-        //},
+        algolia: {
+            appId: 'Z8NZAVZ5OU',
+            apiKey: 'f077307c4e38a788baeabe75db1375ee',
+            indexName: 'sumer5020',
+        },
         //carbonAds: {
         //    code: 'CEBDT27Y',
         //    placement: 'sumer5020'
