@@ -1,6 +1,17 @@
-// https://vitepress.dev/guide/extending-default-theme
-// .vitepress/theme/index.js
-import DefaultTheme from 'vitepress/theme'
-import './style.css'
+/*https://vitepress.dev/guide/extending-default-theme*/
+import { h } from 'vue'
+import Theme from 'vitepress/theme'
 
-export default DefaultTheme
+/*CSS*/
+import './style.css'
+import './tailwind.css'
+
+/*Components*/
+import TagSlide from './components/TagSlide.vue'
+
+export default {
+  extends: Theme,
+  enhanceApp(ctx) {
+    ctx.app.component('TagSlide', TagSlide);
+  }
+}

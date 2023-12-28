@@ -1,9 +1,20 @@
 // .vitepress/config.js
-const hostname = 'https://code.sumer5020.com'
-export default {
+import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
+import { FeedRSS } from './FeedRSS'
+
+const base = '/' // '/vite-plugin-pwa/'
+
+export default withPwa(defineConfig({
+    vite: {
+        logLevel: 'info',
+        define: {
+          __DATE__: `'${new Date().toISOString()}'`,
+        },
+      },
+    base,
     viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     robots: 'index, follow',
-    base: '/',
     head: [
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap' }],
         ['link', { rel: 'icon', href: '/icons/icon-512x512.png' }],
@@ -17,7 +28,6 @@ export default {
         ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-512x512.png' }],
         ['meta', { name: 'google-site-verification', content: 'BBxJs4gm5grOCittFgrlj1Sa8FlKoaRAZiNUEvd0AsE' }],
     ],
-
     theme: 'theme-default',
     themeConfig: {
         logo: '/image/sumer5020.svg',
@@ -103,5 +113,87 @@ export default {
                 ],
             }
         }
-    }
-}
+    },
+    /* your VitePress options */
+    /* Vite PWA Options */
+    pwa: {
+        mode: 'development',
+        //base: '/',
+        //scope: '/',
+        registerType: 'autoUpdate',
+        // injectRegister: 'inline',
+        includeAssets: ['favicon.svg'],
+        manifest: {
+            name: 'Sumer Ahmed - sumer5020',
+            start_url: '/',
+            short_name: 'sumer5020',
+            description: 'A personal profile site of sumer ahmed (sumer5020). A passionate full stack web developer, interested in developing, managing websites, APIs, databases and data analysis with 5 years experience.',
+            theme_color: '#111827',
+            background_color: '#F6F6F6',
+            display: 'standalone',
+            orientation: 'any',
+            status_bar: '#49324b',
+            icons: [
+                {
+                    src: '/icons/icon-72x72.png',
+                    sizes: '72x72',
+                    type: 'image/png'
+                },
+                {
+                    src: '/icons/icon-96x96.png',
+                    sizes: '96x96',
+                    type: 'image/png'
+                },
+                {
+                    src: '/icons/icon-128x128.png',
+                    sizes: '128x128',
+                    type: 'image/png'
+                },
+                {
+                    src: '/icons/icon-144x144.png',
+                    sizes: '144x144',
+                    type: 'image/png'
+                },
+                {
+                    src: '/icons/icon-152x152.png',
+                    sizes: '152x152',
+                    type: 'image/png'
+                },
+                {
+                    src: '/icons/icon-192x192.png',
+                    sizes: '196x196',
+                    type: 'image/png'
+                },
+                {
+                    src: '/icons/icon-384x384.png',
+                    sizes: '384x384',
+                    type: 'image/png'
+                }
+            ],
+            splash: {
+                '640x1136': 'icons/splash-640x1136.png',
+                '750x1334': 'icons/splash-750x1334.png',
+                '828x1792': 'icons/splash-828x1792.png',
+                '1125x2436': 'icons/splash-1125x2436.png',
+                '1242x2208': 'icons/splash-1242x2208.png',
+                '1242x2688': 'icons/splash-1242x2688.png',
+                '1536x2048': 'icons/splash-1536x2048.png',
+                '1668x2224': 'icons/splash-1668x2224.png',
+                '1668x2388': 'icons/splash-1668x2388.png',
+                '2048x2732': 'icons/splash-2048x2732.png'
+            }
+        },
+        workbox: {
+            globPatterns: ['**/*.{css,js,md,html,webp,svg,png,ico,txt,woff2}'],
+        },
+        experimental: {
+            includeAllowlist: true,
+        },
+        devOptions: {
+            enabled: true,
+            suppressWarnings: true,
+            navigateFallback: '/',
+        },
+    },
+    buildEnd: FeedRSS,
+}))
