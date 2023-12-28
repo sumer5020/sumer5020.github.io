@@ -1,11 +1,18 @@
-// .vitepress/config.js
-import { defineConfig, HeadConfig } from 'vitepress'
+/*vitepress config blog: https://laros.io/*/
+import { createContentLoader, defineConfig, HeadConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { FeedRSS } from './FeedRSS'
 
 const base = '/' // '/vite-plugin-pwa/'
 
 export default withPwa(defineConfig({
+    lastUpdated: true,
+    transformHead: ({ pageData }) => {
+        const head: HeadConfig[] = []
+        head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
+        head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
+        return head
+    },
     vite: {
         logLevel: 'info',
         define: {
@@ -13,12 +20,11 @@ export default withPwa(defineConfig({
         },
     },
     base,
-    viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-    robots: 'index, follow',
     head: [
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' }],
+        ['meta', { name: 'robots', content: 'index, follow' }],
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap' }],
         ['link', { rel: 'icon', href: '/icons/icon-512x512.png' }],
-        //['link', { rel: 'manifest', href: '/manifest.json' }],
         ['meta', { name: 'theme-color', content: '#111827' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -28,7 +34,6 @@ export default withPwa(defineConfig({
         ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-512x512.png' }],
         ['meta', { name: 'google-site-verification', content: 'BBxJs4gm5grOCittFgrlj1Sa8FlKoaRAZiNUEvd0AsE' }],
     ],
-    theme: 'theme-default',
     themeConfig: {
         logo: '/image/sumer5020.svg',
         //siteTitle: false,
@@ -114,14 +119,6 @@ export default withPwa(defineConfig({
             }
         }
     },
-    transformHead: ({ pageData }) => {
-        const head: HeadConfig[] = []
-
-        head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
-        head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
-
-        return head
-    },
     /* your VitePress options */
     /* Vite PWA Options */
     pwa: {
@@ -197,4 +194,26 @@ export default withPwa(defineConfig({
         },
     },
     buildEnd: FeedRSS,
+    sitemap: {
+        hostname: 'https://sumer5020.com/',
+        lastmodDateOnly: false,
+        /*
+        transformItems: (items) => {
+            // add new items or modify/filter existing items
+            items.push({
+                url: '/about',
+                lastmod: new Date(),
+                changefreq: 'daily',
+                priority: 0.8,
+            },
+            {
+                url: '/contact',
+                lastmod: new Date(),
+                changefreq: 'monthly',
+                priority: 0.7,
+            }
+            return items
+        }
+        */
+    }
 }))

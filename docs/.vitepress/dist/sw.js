@@ -79,69 +79,69 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "b89effabeba7e3f134e0d5c8580daa16"
+    "revision": "e432082e1f76ddd4cf846d70a4169191"
   }, {
     "url": "about/index.html",
-    "revision": "c48b6700e3ad93eebb582d4827e77c9b"
+    "revision": "60db26d2d6f8be7d7c58e903279098b1"
   }, {
     "url": "ar/about/index.html",
-    "revision": "168b0f4fdf7689a4183a8054981b72de"
+    "revision": "935c8fb1557b11fd13638ca4910a76dd"
   }, {
     "url": "ar/blog/index.html",
-    "revision": "16cf998b5fb4203981e9f229a7689b8f"
+    "revision": "a43dd1ee7b7d0a19e646f0b3bc7b2738"
   }, {
     "url": "ar/contact/index.html",
-    "revision": "4d9dbd53cd4dbf6ba59ac3d2ae74c147"
+    "revision": "5bb790c8951c0322d73b4ff99be04e54"
   }, {
     "url": "ar/index.html",
-    "revision": "f449a3381a65541edcbdeae8d9be979a"
+    "revision": "12fa5973a75084f747836490818d3be4"
   }, {
     "url": "ar/projects/index.html",
-    "revision": "0aee946fb0a7ccb113ef5325364dfd6c"
+    "revision": "93b848f2ffcc94907bbc82c351cbf8de"
   }, {
-    "url": "assets/about_index.md.3TmHvD-2.js",
+    "url": "assets/about_index.md.rNblPHVs.js",
     "revision": null
   }, {
-    "url": "assets/about_index.md.3TmHvD-2.lean.js",
+    "url": "assets/about_index.md.rNblPHVs.lean.js",
     "revision": null
   }, {
     "url": "assets/app.CiM4YRsd.js",
     "revision": null
   }, {
-    "url": "assets/ar_about_index.md.5utqYV0c.js",
+    "url": "assets/ar_about_index.md.LINr5pDz.js",
     "revision": null
   }, {
-    "url": "assets/ar_about_index.md.5utqYV0c.lean.js",
+    "url": "assets/ar_about_index.md.LINr5pDz.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_blog_index.md.Rw309Zi3.js",
+    "url": "assets/ar_blog_index.md.pUHmH1zJ.js",
     "revision": null
   }, {
-    "url": "assets/ar_blog_index.md.Rw309Zi3.lean.js",
+    "url": "assets/ar_blog_index.md.pUHmH1zJ.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_contact_index.md.ntM0eNxE.js",
+    "url": "assets/ar_contact_index.md.WpUelLb7.js",
     "revision": null
   }, {
-    "url": "assets/ar_contact_index.md.ntM0eNxE.lean.js",
+    "url": "assets/ar_contact_index.md.WpUelLb7.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_index.md.yOITueXo.js",
+    "url": "assets/ar_index.md.JE_SqI8k.js",
     "revision": null
   }, {
-    "url": "assets/ar_index.md.yOITueXo.lean.js",
+    "url": "assets/ar_index.md.JE_SqI8k.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_projects_index.md.bhm9SPa3.js",
+    "url": "assets/ar_projects_index.md._W8qTiJC.js",
     "revision": null
   }, {
-    "url": "assets/ar_projects_index.md.bhm9SPa3.lean.js",
+    "url": "assets/ar_projects_index.md._W8qTiJC.lean.js",
     "revision": null
   }, {
-    "url": "assets/blog_index.md.4qq1wuVb.js",
+    "url": "assets/blog_index.md.C0o-CG30.js",
     "revision": null
   }, {
-    "url": "assets/blog_index.md.4qq1wuVb.lean.js",
+    "url": "assets/blog_index.md.C0o-CG30.lean.js",
     "revision": null
   }, {
     "url": "assets/chunks/framework.g33eqF2v.js",
@@ -150,16 +150,16 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/chunks/theme.EdT4jrTA.js",
     "revision": null
   }, {
-    "url": "assets/contact_index.md.RW-txOp5.js",
+    "url": "assets/contact_index.md.aS-sGdOL.js",
     "revision": null
   }, {
-    "url": "assets/contact_index.md.RW-txOp5.lean.js",
+    "url": "assets/contact_index.md.aS-sGdOL.lean.js",
     "revision": null
   }, {
-    "url": "assets/index.md.6gZ7J6E3.js",
+    "url": "assets/index.md.ctLE7b4E.js",
     "revision": null
   }, {
-    "url": "assets/index.md.6gZ7J6E3.lean.js",
+    "url": "assets/index.md.ctLE7b4E.lean.js",
     "revision": null
   }, {
     "url": "assets/inter-italic-cyrillic-ext.OVycGSDq.woff2",
@@ -204,32 +204,32 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/inter-roman-vietnamese.paY3CzEB.woff2",
     "revision": null
   }, {
-    "url": "assets/projects_index.md.B72gylo9.js",
+    "url": "assets/projects_index.md.qrzePRHV.js",
     "revision": null
   }, {
-    "url": "assets/projects_index.md.B72gylo9.lean.js",
+    "url": "assets/projects_index.md.qrzePRHV.lean.js",
     "revision": null
   }, {
-    "url": "assets/style.-KMDpJzN.css",
+    "url": "assets/style.pz1oVix1.css",
     "revision": null
   }, {
-    "url": "assets/test_api.md.9xOioJHC.js",
+    "url": "assets/test_api.md.PCgbzHgS.js",
     "revision": null
   }, {
-    "url": "assets/test_api.md.9xOioJHC.lean.js",
+    "url": "assets/test_api.md.PCgbzHgS.lean.js",
     "revision": null
   }, {
-    "url": "assets/test_md.md.M2t5awuU.js",
+    "url": "assets/test_md.md.kvccmNGu.js",
     "revision": null
   }, {
-    "url": "assets/test_md.md.M2t5awuU.lean.js",
+    "url": "assets/test_md.md.kvccmNGu.lean.js",
     "revision": null
   }, {
     "url": "blog/index.html",
-    "revision": "76e1a2eff6df21b1168576ef1d05220b"
+    "revision": "1d58ae4166604fe8db93a16e26b0bddd"
   }, {
     "url": "contact/index.html",
-    "revision": "847da17056143d9e518057d0a1df3fee"
+    "revision": "2ef6b52be2529c0b456f64ff8c970a1e"
   }, {
     "url": "favicon.ico",
     "revision": "3575b2a0afb1cc4f0f8957891d3e464a"
@@ -301,10 +301,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": "947a53713bdcd7ad11e7f2115c2f2981"
   }, {
     "url": "index.html",
-    "revision": "42c8e35d05e8fa1a742e63b34307232e"
+    "revision": "cab338a7e3a37da65dcf48cf4605bb0b"
   }, {
     "url": "projects/index.html",
-    "revision": "4021327712a8c6e2c24b8d2b8280dd20"
+    "revision": "072276682fe6ef7922a7636caf6b8205"
   }, {
     "url": "registerSW.js",
     "revision": "1872c500de691dce40960bb85481de07"
@@ -313,10 +313,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": "cd9cd94aaa699e0a16e692b6bb16f672"
   }, {
     "url": "test/api.html",
-    "revision": "f85f13a67ef391f79d7e1905f56fea15"
+    "revision": "197fe314ddda93202080d20c3452a655"
   }, {
     "url": "test/md.html",
-    "revision": "3900af40b3684c856e6bcbd675713cb9"
+    "revision": "004c375310d2359c9bc20d1f5d473fda"
   }, {
     "url": "icons/icon-72x72.png",
     "revision": "4fa58c6cb70b69b2280866c845db9f80"
@@ -333,11 +333,17 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "icons/icon-152x152.png",
     "revision": "be729db30ccb84c9c2275fb6cb867c5f"
   }, {
+    "url": "icons/icon-196x196.png",
+    "revision": "244890427a56859c6a8ca7cd1a358208"
+  }, {
     "url": "icons/icon-384x384.png",
     "revision": "aefcce886e53cfe2d9baca0dca024c19"
   }, {
+    "url": "icons/icon-512x512.png",
+    "revision": "1227a19acd69bf825b723b10d65ab79d"
+  }, {
     "url": "manifest.webmanifest",
-    "revision": "671cb4262ca88760aec99d755fd17874"
+    "revision": "a4d1abe06fe6c83411492d6fb62b815f"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {

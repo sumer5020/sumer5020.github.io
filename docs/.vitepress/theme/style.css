@@ -47,9 +47,9 @@
    * -------------------------------------------------------------------------- */
   
   :root {
-    --vp-c-purplish-1:#937296;
-    --vp-c-purplish-2:#b9a0b5;
-    --vp-c-purplish-3:#c9b4c0;
+    --vp-c-purplish-1:#78587b;
+    --vp-c-purplish-2:#a487a0;
+    --vp-c-purplish-3:#b498a8;
     --vp-c-purplish-soft: rgba(142, 150, 170, 0.16);
 
     --vp-c-gray-1: #dddde3;
@@ -81,9 +81,9 @@
   }
   
   .dark {
-    --vp-c-purplish-1:#c9b4c0;
-    --vp-c-purplish-2:#b9a0b5;
-    --vp-c-purplish-3:#937296;
+    --vp-c-purplish-1:#b498a8;
+    --vp-c-purplish-2:#a487a0;
+    --vp-c-purplish-3:#78587b;
     --vp-c-purplish-soft: rgba(142, 150, 170, 0.16);
 
     --vp-c-gray-1: #515c67;
