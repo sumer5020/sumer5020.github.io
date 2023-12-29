@@ -1,10 +1,15 @@
+/*all except .NotFound class*/
 * {
     text-align: initial;
 }
 
+.NotFound,.NotFound *{
+    text-align: center;
+}
+
 ::selection {
     color: #EBEAF8;
-    background: #9995DBaa;
+    background: #9e800baa;
 }
 
 html {

@@ -1,6 +1,6 @@
 {
   "name": "sumer5020",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A personal profile site.",
   "main": "index.js",
   "repository": "https://github.com/sumer5020/sumer5020.github.io.git",
@@ -10,10 +10,9 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress build docs && vitepress dev docs",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "docs:preview": "vitepress preview docs --port 8080",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "preview": "vitepress preview docs --port 8080",
     "cache:clean": "yarn cache clean"
   },
   "devDependencies": {

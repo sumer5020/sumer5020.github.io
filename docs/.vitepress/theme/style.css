@@ -333,10 +333,11 @@
 
 /**
    * Component: Header Anchor
+   * --vp-header-anchor-symbol: '#';
    * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-header-anchor-symbol: '#';
+  --vp-header-anchor-symbol: '';
 }
 
 /**

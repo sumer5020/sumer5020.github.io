@@ -78,27 +78,6 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "404.html",
-    "revision": "cdcb35fc2dd9d214925c8f93d3d0f8be"
-  }, {
-    "url": "about/index.html",
-    "revision": "0eea2ea8efb643ff5152461099b3ba14"
-  }, {
-    "url": "ar/about/index.html",
-    "revision": "06d9a1e0749a96842824a582c125abfb"
-  }, {
-    "url": "ar/blog/index.html",
-    "revision": "f898c05361712f66582fcf90e4619a89"
-  }, {
-    "url": "ar/contact/index.html",
-    "revision": "7afce3de85d42c971a4815c04b1fedda"
-  }, {
-    "url": "ar/index.html",
-    "revision": "7d34e2ac38320a59a02c4ca285f71383"
-  }, {
-    "url": "ar/projects/index.html",
-    "revision": "124da2e3817df17a50a64dd483c4a57e"
-  }, {
     "url": "assets/about_index.md.b3YQ7oBc.js",
     "revision": null
   }, {
@@ -126,10 +105,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/ar_contact_index.md.NBKA34wR.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_index.md.vPfxw9nv.js",
+    "url": "assets/ar_index.md.9BuQt4GG.js",
     "revision": null
   }, {
-    "url": "assets/ar_index.md.vPfxw9nv.lean.js",
+    "url": "assets/ar_index.md.9BuQt4GG.lean.js",
     "revision": null
   }, {
     "url": "assets/ar_projects_index.md.7xuB5Rqa.js",
@@ -156,10 +135,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/contact_index.md.6jm51Iu5.lean.js",
     "revision": null
   }, {
-    "url": "assets/index.md.ehlTswad.js",
+    "url": "assets/index.md.WKkt0T0F.js",
     "revision": null
   }, {
-    "url": "assets/index.md.ehlTswad.lean.js",
+    "url": "assets/index.md.WKkt0T0F.lean.js",
     "revision": null
   }, {
     "url": "assets/inter-italic-cyrillic-ext.OVycGSDq.woff2",
@@ -210,7 +189,7 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/projects_index.md.utIFVBy6.lean.js",
     "revision": null
   }, {
-    "url": "assets/style.lrdR06Xx.css",
+    "url": "assets/style.gjEOpydT.css",
     "revision": null
   }, {
     "url": "assets/test_api.md.IczBvUCi.js",
@@ -224,12 +203,6 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
   }, {
     "url": "assets/test_md.md.aqOB8nOc.lean.js",
     "revision": null
-  }, {
-    "url": "blog/index.html",
-    "revision": "32ab423867cad442cb815ee76ae452dd"
-  }, {
-    "url": "contact/index.html",
-    "revision": "61ff68b59e486fbdbe0831c988d0c742"
   }, {
     "url": "favicon.ico",
     "revision": "3575b2a0afb1cc4f0f8957891d3e464a"
@@ -300,23 +273,11 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "image/sumer5020Eye.svg",
     "revision": "947a53713bdcd7ad11e7f2115c2f2981"
   }, {
-    "url": "index.html",
-    "revision": "c91d413f6df0501161075b57dea1b562"
-  }, {
-    "url": "projects/index.html",
-    "revision": "61f093d669f7193c965070235df69bc0"
-  }, {
     "url": "registerSW.js",
     "revision": "1872c500de691dce40960bb85481de07"
   }, {
     "url": "robots.txt",
     "revision": "cd9cd94aaa699e0a16e692b6bb16f672"
-  }, {
-    "url": "test/api.html",
-    "revision": "2187a2d73981af7d7cfdfbbec4985dfe"
-  }, {
-    "url": "test/md.html",
-    "revision": "639b7cf6017862a07827f061ea421bbf"
   }, {
     "url": "icons/icon-72x72.png",
     "revision": "4fa58c6cb70b69b2280866c845db9f80"
@@ -347,7 +308,7 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
-    allowlist: [/^\/about\/index(\.html)?$/, /^\/ar\/about\/index(\.html)?$/, /^\/ar\/blog\/index(\.html)?$/, /^\/ar\/contact\/index(\.html)?$/, /^\/ar\/index(\.html)?$/, /^\/ar\/projects\/index(\.html)?$/, /^\/blog\/index(\.html)?$/, /^\/contact\/index(\.html)?$/, /^\/(\.html)?$/, /^\/projects\/index(\.html)?$/, /^\/test\/api(\.html)?$/, /^\/test\/md(\.html)?$/]
+    allowlist: []
   }));
   workbox.registerRoute(({
     request,
