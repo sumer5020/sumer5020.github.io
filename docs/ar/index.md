@@ -17,3 +17,5 @@ hero:
     src: /image/sumer-ahmed-contact-qr.svg
     alt: "سومر-احمد"
 ---
+
+<TagSlide />

@@ -5,6 +5,7 @@ import Theme from 'vitepress/theme'
 /*CSS*/
 import './style.css'
 import './tailwind.css'
+import './custome.css'
 
 /*Components*/
 import TagSlide from './components/TagSlide.vue'
