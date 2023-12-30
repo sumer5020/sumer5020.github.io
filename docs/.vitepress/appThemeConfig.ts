@@ -54,8 +54,8 @@ export const arabicThemeConfig = {
       { text: 'الرئيسية', link: '/ar/' },
       { text: 'المدونة', link: '/ar/blog/' },
       { text: 'المشاريع', link: '/ar/projects/' },
-      { text: 'من نحن', link: '/ar/about/' },
-      { text: 'اتصل بنا', link: '/ar/contact/' }
+      { text: 'من انا', link: '/ar/about/' },
+      { text: 'التواصل', link: '/ar/contact/' }
     ]
   }
 };

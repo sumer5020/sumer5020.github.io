@@ -78,6 +78,27 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
+    "url": "404.html",
+    "revision": "3ae761132da8bc0ec226bb76dacf3853"
+  }, {
+    "url": "about/index.html",
+    "revision": "0e0a571a78b77a48b76c55f01f3ce5bd"
+  }, {
+    "url": "ar/about/index.html",
+    "revision": "e1bdffcb46e4a98dfc84d3e6c81c7754"
+  }, {
+    "url": "ar/blog/index.html",
+    "revision": "aea7152207efd2699a00cdbdb5511f9a"
+  }, {
+    "url": "ar/contact/index.html",
+    "revision": "b503f2333c212d73237c9f8dd9239358"
+  }, {
+    "url": "ar/index.html",
+    "revision": "3d55297120865d87555db6729b3de1b2"
+  }, {
+    "url": "ar/projects/index.html",
+    "revision": "00da665117ade1a05823b4e91575f69b"
+  }, {
     "url": "assets/about_index.md.b3YQ7oBc.js",
     "revision": null
   }, {
@@ -99,16 +120,16 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/ar_blog_index.md.zVk2Fxah.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_contact_index.md.NBKA34wR.js",
+    "url": "assets/ar_contact_index.md.McLVNizP.js",
     "revision": null
   }, {
-    "url": "assets/ar_contact_index.md.NBKA34wR.lean.js",
+    "url": "assets/ar_contact_index.md.McLVNizP.lean.js",
     "revision": null
   }, {
-    "url": "assets/ar_index.md.9BuQt4GG.js",
+    "url": "assets/ar_index.md.Blegosfp.js",
     "revision": null
   }, {
-    "url": "assets/ar_index.md.9BuQt4GG.lean.js",
+    "url": "assets/ar_index.md.Blegosfp.lean.js",
     "revision": null
   }, {
     "url": "assets/ar_projects_index.md.7xuB5Rqa.js",
@@ -135,10 +156,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/contact_index.md.6jm51Iu5.lean.js",
     "revision": null
   }, {
-    "url": "assets/index.md.WKkt0T0F.js",
+    "url": "assets/index.md.cTnxZuRn.js",
     "revision": null
   }, {
-    "url": "assets/index.md.WKkt0T0F.lean.js",
+    "url": "assets/index.md.cTnxZuRn.lean.js",
     "revision": null
   }, {
     "url": "assets/inter-italic-cyrillic-ext.OVycGSDq.woff2",
@@ -203,6 +224,12 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
   }, {
     "url": "assets/test_md.md.aqOB8nOc.lean.js",
     "revision": null
+  }, {
+    "url": "blog/index.html",
+    "revision": "98dae93657db4ea1259762d9c1ca79cd"
+  }, {
+    "url": "contact/index.html",
+    "revision": "791c3e75188ea478a4d4e932191fc12f"
   }, {
     "url": "favicon.ico",
     "revision": "3575b2a0afb1cc4f0f8957891d3e464a"
@@ -273,11 +300,23 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "image/sumer5020Eye.svg",
     "revision": "947a53713bdcd7ad11e7f2115c2f2981"
   }, {
+    "url": "index.html",
+    "revision": "b7a81c87b9276b03eb1eebd2a8b515ea"
+  }, {
+    "url": "projects/index.html",
+    "revision": "10115252679a9dd322232ca575563309"
+  }, {
     "url": "registerSW.js",
     "revision": "1872c500de691dce40960bb85481de07"
   }, {
     "url": "robots.txt",
     "revision": "cd9cd94aaa699e0a16e692b6bb16f672"
+  }, {
+    "url": "test/api.html",
+    "revision": "a978016218a3f7782d943d3b880dd8f3"
+  }, {
+    "url": "test/md.html",
+    "revision": "83f57ec7d0e87f66002639abdf381d77"
   }, {
     "url": "icons/icon-72x72.png",
     "revision": "4fa58c6cb70b69b2280866c845db9f80"
@@ -308,7 +347,7 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
-    allowlist: []
+    allowlist: [/^\/about\/index(\.html)?$/, /^\/ar\/about\/index(\.html)?$/, /^\/ar\/blog\/index(\.html)?$/, /^\/ar\/contact\/index(\.html)?$/, /^\/ar\/index(\.html)?$/, /^\/ar\/projects\/index(\.html)?$/, /^\/blog\/index(\.html)?$/, /^\/contact\/index(\.html)?$/, /^\/(\.html)?$/, /^\/projects\/index(\.html)?$/, /^\/test\/api(\.html)?$/, /^\/test\/md(\.html)?$/]
   }));
   workbox.registerRoute(({
     request,

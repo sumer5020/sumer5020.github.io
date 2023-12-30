@@ -18,7 +18,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      Accent: "#9e800b", // #f1c40f Accent 1
+      Accent: "#9e800b", // Accent 1
       Accent2: "#fc5185",  // Accent 2
 
       dark_primary: "#b498a8",
