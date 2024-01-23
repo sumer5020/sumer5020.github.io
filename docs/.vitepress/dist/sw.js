@@ -79,25 +79,25 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "d238a858122c43bcdbe24a5644d02d20"
+    "revision": "b2c758e9ed0ee9a0928629d3427ef260"
   }, {
     "url": "about/index.html",
-    "revision": "d17311b89f10239e1e0d23a0cf6c17b2"
+    "revision": "6f616ecd70b280dd340ce127df8dd49d"
   }, {
     "url": "ar/about/index.html",
-    "revision": "51d9b760303ffea7c2b2d694de033423"
+    "revision": "b736bb9d1b2d053de6812bcb7b891964"
   }, {
     "url": "ar/blog/index.html",
-    "revision": "ead3fa725aeb2ecee8b96f417adee0fb"
+    "revision": "7c92c99a3f0ac0c18a4fda93a8c2c007"
   }, {
     "url": "ar/contact/index.html",
-    "revision": "a0418f91e5479809db45bb30291854d3"
+    "revision": "790dd23df8bfeeb09113f97094655707"
   }, {
     "url": "ar/index.html",
-    "revision": "66a053ff181e271b3e495c3800b9827a"
+    "revision": "5be0a8a784cb819848db6fb9298c1b41"
   }, {
     "url": "ar/projects/index.html",
-    "revision": "3726a1cb952f23dd637a383b8682d62f"
+    "revision": "6b5248edbad28c254f7908713462afc8"
   }, {
     "url": "assets/about_index.md.b3YQ7oBc.js",
     "revision": null
@@ -226,10 +226,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": null
   }, {
     "url": "blog/index.html",
-    "revision": "86fac95d00c76d85b97efa60f50d786d"
+    "revision": "88ca8a0c7a70430e6f7ede5bc7efb9d4"
   }, {
     "url": "contact/index.html",
-    "revision": "c0d8cc4ca855927a409295c5416bd174"
+    "revision": "6e7c266891796c8cd19edcb20c404157"
   }, {
     "url": "favicon.ico",
     "revision": "3575b2a0afb1cc4f0f8957891d3e464a"
@@ -292,10 +292,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": "fbd0cc5bf45d582b3d2af4b17d8fa715"
   }, {
     "url": "image/sumer-ahmed-contact-qr_old.svg",
-    "revision": "bed7e7874a74f8923e33be9e362db52a"
+    "revision": "f60f9c827d0f820cc997eb1c4d74fc9a"
   }, {
     "url": "image/sumer-ahmed-contact-qr.svg",
-    "revision": "831a195ccec780fdcefe9e15b9943319"
+    "revision": "1d3d44177ad85534818d99a12daa5556"
   }, {
     "url": "image/sumer5020.svg",
     "revision": "1797cfda0de26b4287c41e265c0a8363"
@@ -304,10 +304,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": "cfb396b042fa5f0b58f1b5a07bd849c0"
   }, {
     "url": "index.html",
-    "revision": "2b101bfd17f69dcdf8c82b322c86af9f"
+    "revision": "330d3c46a0db7bfae7735ea3ee10ff3c"
   }, {
     "url": "projects/index.html",
-    "revision": "fe053f0bd113ba72e186b69bd5c80e4a"
+    "revision": "f98db27730ad4f9792e04b9ac0f5e235"
   }, {
     "url": "registerSW.js",
     "revision": "1872c500de691dce40960bb85481de07"
@@ -316,10 +316,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": "f77c87f977e0fcce05a6df46c885a129"
   }, {
     "url": "test/api.html",
-    "revision": "e3d3167b6d5c20f44c718c332f45017d"
+    "revision": "1eb4502f20071c5b5be6cf8f2538d774"
   }, {
     "url": "test/md.html",
-    "revision": "de9dd7658ec9cae6214c90d25223c0a0"
+    "revision": "bb2c060b71f1bb8c2d6787a8f1ba0e6d"
   }, {
     "url": "icons/icon-72x72.png",
     "revision": "4fa58c6cb70b69b2280866c845db9f80"
