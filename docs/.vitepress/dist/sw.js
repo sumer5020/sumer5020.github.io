@@ -79,25 +79,25 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "918cd7764f383d313edf95a5356cfd77"
+    "revision": "d238a858122c43bcdbe24a5644d02d20"
   }, {
     "url": "about/index.html",
-    "revision": "e06d5f7ec183168aa2ee3c381afba969"
+    "revision": "d17311b89f10239e1e0d23a0cf6c17b2"
   }, {
     "url": "ar/about/index.html",
-    "revision": "d01c0b8c68d356678578d912e6079d71"
+    "revision": "51d9b760303ffea7c2b2d694de033423"
   }, {
     "url": "ar/blog/index.html",
-    "revision": "bc16dbddefbbacbfe49ee85cc143491e"
+    "revision": "ead3fa725aeb2ecee8b96f417adee0fb"
   }, {
     "url": "ar/contact/index.html",
-    "revision": "cdb8f1b6d65729200572a5d4dcbac06b"
+    "revision": "a0418f91e5479809db45bb30291854d3"
   }, {
     "url": "ar/index.html",
-    "revision": "85a476161865765ebf67da1fe8f30f31"
+    "revision": "66a053ff181e271b3e495c3800b9827a"
   }, {
     "url": "ar/projects/index.html",
-    "revision": "ce948c0aa7c30f3c575c28884d0383ff"
+    "revision": "3726a1cb952f23dd637a383b8682d62f"
   }, {
     "url": "assets/about_index.md.b3YQ7oBc.js",
     "revision": null
@@ -150,10 +150,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "assets/chunks/theme.FrV_8m6t.js",
     "revision": null
   }, {
-    "url": "assets/contact_index.md.0Qw7U2fx.js",
+    "url": "assets/contact_index.md.otWCBRKo.js",
     "revision": null
   }, {
-    "url": "assets/contact_index.md.0Qw7U2fx.lean.js",
+    "url": "assets/contact_index.md.otWCBRKo.lean.js",
     "revision": null
   }, {
     "url": "assets/index.md.uQeFog8G.js",
@@ -226,10 +226,10 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "revision": null
   }, {
     "url": "blog/index.html",
-    "revision": "1bf5b05750eafd8f050fe3c051486828"
+    "revision": "86fac95d00c76d85b97efa60f50d786d"
   }, {
     "url": "contact/index.html",
-    "revision": "b3861dcf15948826964639b3eefe7e51"
+    "revision": "c0d8cc4ca855927a409295c5416bd174"
   }, {
     "url": "favicon.ico",
     "revision": "3575b2a0afb1cc4f0f8957891d3e464a"
@@ -291,32 +291,35 @@ define(['./workbox-f217a2cf'], (function (workbox) { 'use strict';
     "url": "icons/splash-828x1792.png",
     "revision": "fbd0cc5bf45d582b3d2af4b17d8fa715"
   }, {
+    "url": "image/sumer-ahmed-contact-qr_old.svg",
+    "revision": "bed7e7874a74f8923e33be9e362db52a"
+  }, {
     "url": "image/sumer-ahmed-contact-qr.svg",
-    "revision": "150d8caabbc6b652bf00aab7c31af832"
+    "revision": "831a195ccec780fdcefe9e15b9943319"
   }, {
     "url": "image/sumer5020.svg",
     "revision": "1797cfda0de26b4287c41e265c0a8363"
   }, {
     "url": "image/sumer5020Eye.svg",
-    "revision": "947a53713bdcd7ad11e7f2115c2f2981"
+    "revision": "cfb396b042fa5f0b58f1b5a07bd849c0"
   }, {
     "url": "index.html",
-    "revision": "9ea4d925daa07765941abf8f0df7c5fa"
+    "revision": "2b101bfd17f69dcdf8c82b322c86af9f"
   }, {
     "url": "projects/index.html",
-    "revision": "d74fb00c75d7cd3a268bf3ace355cdb1"
+    "revision": "fe053f0bd113ba72e186b69bd5c80e4a"
   }, {
     "url": "registerSW.js",
     "revision": "1872c500de691dce40960bb85481de07"
   }, {
     "url": "robots.txt",
-    "revision": "cd9cd94aaa699e0a16e692b6bb16f672"
+    "revision": "f77c87f977e0fcce05a6df46c885a129"
   }, {
     "url": "test/api.html",
-    "revision": "c921279d1cd9e9ccd574b80f964f6476"
+    "revision": "e3d3167b6d5c20f44c718c332f45017d"
   }, {
     "url": "test/md.html",
-    "revision": "e3cb6971cc90922a8cd77a2d848a4130"
+    "revision": "de9dd7658ec9cae6214c90d25223c0a0"
   }, {
     "url": "icons/icon-72x72.png",
     "revision": "4fa58c6cb70b69b2280866c845db9f80"
