@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: السيرة الذاتية
-      link: "/doc/Sumer-Ahmed-Abdulrazaq-AR.pdf"
+      link: "/Sumer-Ahmed-Abdulrazaq-AR.pdf"
     - theme: alt
       text: التواصل
       link: /ar/contact/
