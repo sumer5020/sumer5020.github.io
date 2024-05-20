@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Resume
-      link: "/doc/Sumer-Ahmed-Abdulrazaq-EN.pdf"
+      link: "/Sumer-Ahmed-Abdulrazaq-EN.pdf"
     - theme: alt
       text: Contact
       link: "/contact/"
