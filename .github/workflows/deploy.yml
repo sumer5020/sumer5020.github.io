@@ -1,4 +1,4 @@
-name: Deploy sumer5020 to GitHub Pages
+name: Deploy sumer5020.me to GitHub Pages
 
 on:
   push:
@@ -46,15 +46,18 @@ jobs:
         run: |
           yarn build
           touch docs/.vitepress/dist/.nojekyll
-          echo "Build completed at $(date)" >> docs/.vitepress/dist/build-info.txt
+          echo "Build version: $GITHUB_SHA" >> docs/.vitepress/dist/build-info.txt
 
       - name: Verify build output
-        run: ls -la docs/.vitepress/dist
+        run: |
+          echo "Build directory contents:"
+          ls -la docs/.vitepress/dist
+          test -f docs/.vitepress/dist/index.html || (echo "Missing index.html" && exit 1)
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: vitepress-artifact
+          name: github-pages
           path: docs/.vitepress/dist
           retention-days: 3
 
@@ -67,9 +70,11 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      contents: write
+      contents: read
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-        timeout-minutes: 5
+        with:
+          artifact-name: github-pages
+          timeout-minutes: 5
