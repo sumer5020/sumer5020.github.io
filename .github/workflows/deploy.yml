@@ -48,18 +48,20 @@ jobs:
           touch docs/.vitepress/dist/.nojekyll
           echo "Build version: $GITHUB_SHA" >> docs/.vitepress/dist/build-info.txt
 
-      - name: Verify build output
+      - name: Validate build output
         run: |
-          echo "Build directory contents:"
-          ls -la docs/.vitepress/dist
-          test -f docs/.vitepress/dist/index.html || (echo "Missing index.html" && exit 1)
+          echo "Directory structure:"
+          ls -R docs/.vitepress/dist
+          test -f docs/.vitepress/dist/index.html || (echo "Missing index.html"; exit 1)
+          test -f docs/.vitepress/dist/.nojekyll || (echo "Missing .nojekyll"; exit 1)
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: docs/.vitepress/dist
-          retention-days: 3
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
     environment:
@@ -70,11 +72,10 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      contents: read
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
         with:
-          artifact_name: github-pages 
-          timeout: 300000 
+          artifact_name: github-pages
+          timeout: 300000  # 5 minutes in milliseconds
