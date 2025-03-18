@@ -1,61 +1,75 @@
-# Sample workflow for building and deploying
-name: Deploy code.sumer5020.com site to github Pages
+name: Deploy sumer5020 to GitHub Pages
+
 on:
-  # Runs on pushes targeting the `main` branch or your default branch
   push:
-      branches: [main]
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+
 permissions:
   contents: read
   pages: write
   id-token: write
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
-      # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
-      - name: Setup Node
-        uses: actions/setup-node@v3
+          fetch-depth: 0
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: yarn # or pnpm / yarn / npm
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+          node-version: 20
+          cache: yarn
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            docs/.vitepress/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
+
       - name: Build with VitePress
         run: |
           yarn build
           touch docs/.vitepress/dist/.nojekyll
+          echo "Build completed at $(date)" >> docs/.vitepress/dist/build-info.txt
+
+      - name: Verify build output
+        run: ls -la docs/.vitepress/dist
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages
+          name: vitepress-artifact
           path: docs/.vitepress/dist
+          retention-days: 3
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
+    permissions:
+      pages: write
+      id-token: write
+      contents: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
+        timeout-minutes: 5
