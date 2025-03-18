@@ -160,7 +160,7 @@ export default withPwa(defineConfig({
     },
     buildEnd: FeedRSS,
     sitemap: {
-        hostname: 'https://sumer5020.com/',
+        hostname: 'https://sumer5020.me/',
         lastmodDateOnly: false,
         /*
         transformItems: (items) => {
