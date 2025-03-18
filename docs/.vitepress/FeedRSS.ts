@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { createContentLoader, type SiteConfig } from 'vitepress'
 
-const hostname = 'https://code.sumer5020.com'
+const hostname = 'https://sumer5020.me'
 const currentYear = new Date().getFullYear()
 
 export async function FeedRSS(config: SiteConfig) {
