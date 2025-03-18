@@ -44,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: vitepress-artifact
+          name: github-pages
           path: docs/.vitepress/dist
 
   # Deployment job
